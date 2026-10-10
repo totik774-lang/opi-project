@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, project</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 90%;
+        padding: 30px;
+      }
+
+      h1 {
+        color: #1f3a5f;
+        margin-top: 0;
+        text-align: center;
+      }
+
+      p {
+        color: #333333;
+        line-height: 1.6;
+      }
+
+      ul {
+        padding-left: 20px;
+        color: #2d4059;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto 0;
+        background: #2a9d8f;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #23867d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Hello, project</h1>
+      <p>
+        Це маленький навчальний проєкт, у якому я вивчаю основи веброзробки,
+        структуру сторінок і роботу з HTML, CSS і JavaScript.
+      </p>
+
+      <ul>
+        <li>Вивчення HTML</li>
+        <li>Створення красивих сторінок</li>
+        <li>Розробка інтерфейсів</li>
+      </ul>
+
+      <button id="helloButton">Натисни мене</button>
+    </div>
+
+    <script>
+      const button = document.getElementById('helloButton');
+
+      button.addEventListener('click', function () {
+        alert('Привіт! Це мій проект!');
+      });
+    </script>
+  </body>
+</html>
